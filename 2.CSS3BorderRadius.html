@@ -61,6 +61,36 @@
             text-align: center;
             line-height: 300px;
         }
+        .semuasisitiga{
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            background-image: url(img/resume.jpg);
+            /* gambar di dalam framnya */
+            /* agar tidak brulang */
+            background-repeat: no-repeat;
+            /* agar pnuh */
+            background-size: cover;
+            border-radius: 0 50% 50% 50%;
+            /* buat border semua sisi beda2 cman 1 property */
+            text-align: center;
+            line-height: 300px;
+        }
+        /* contoh lain misal  img-nya ada dalam div dan bukan di stylnya */
+        .semuasisimpat{
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            border-radius: 0 50% 50% 50%;
+            /* buat border semua sisi beda2 cman 1 property */
+            text-align: center;
+            line-height: 300px;
+            /* agar smuayang kluar dari div trhiddn */
+            overflow: hidden;
+        }
+        img {
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -69,5 +99,10 @@
     <div class="kanan-atas">Hello World!</div>
     <div class="duasisi">Hello World!</div>
     <div class="semuasisi">Hello World!</div>
+    <div class="semuasisitiga">Hello World!</div>
+    <!-- jika mltakkan imag pada div dngan bordr maka otomatis imag dalam fram bordr  -->
+    <div class="semuasisimpat">
+        <img src="img/resume.jpg" alt="####">
+    </div>
 </body>
 </html>
