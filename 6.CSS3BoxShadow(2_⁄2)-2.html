@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>6.CSS3BoxShadow(2_⁄2)</title>
+<style>
+    /* KEREN PAKAI BOX SHADOW ,HOVER DAN TRANSITION */
+    .kue {
+        width: 300px;
+        height: 300px;
+        background-color: #39b64a;
+        margin: 50px auto;
+        /* penggunanaan inset yang membuat bayangan muncul didalam */
+        box-shadow: inset 0 0 5px 10px rgba(0,0,0,.5)
+    }
+    .kueku {
+        width: 300px;
+        height: 300px;
+        background-color: #39b64a;
+        margin: 50px auto;
+        /* penggunanaan inset yang membuat bayangan muncul didalam */
+        /* main akal-akalan border */
+        box-shadow: 0 0 0 5px red,
+                    0 0 0 10px green,
+                    0 0 0 15px yellow,
+                    0 0 0 20px orange;
+    }
+    .kuekulagi {
+        width: 300px;
+        height: 300px;
+        background-color: #39b64a;
+        margin: 50px auto;
+        /* penggunanaan inset yang membuat bayangan muncul didalam */
+        /* main akal-akalan border */
+        box-shadow: 0 0 0 5px red,
+                    0 0 0 10px green,
+                    0 0 0 15px yellow,
+                    0 0 0 20px orange;
+        border-radius: 50%;
+    }
+  
+</style>
+
+</head>
+<body>
+    <!-- box-shadow:
+    1. <x-offset> : mengatur bayangan pada sumbu horisontal, bayangan bergerak ke kanan 
+    2. <y-offset> : mengatur bayangan pada sumbu vertikal
+    3. <blur>     : mengatur blur 
+    4. color      : memberi warna
+
+    value tambahan
+    1. <inset> ,membuat bayanganmasuk ke dalam     
+    2. <spread> adalah angka ke-4 dgan fungsi sbg ukuran bayangan
+    ##multiple shadow bisa memberi banyak bayangan-->
+    <div class="kue"></div>
+    <div class="kueku"></div>
+    <div class="kuekulagi"></div>
+</body>
+</html>
