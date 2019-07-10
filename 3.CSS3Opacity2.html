@@ -10,10 +10,91 @@
         body {
             background-image: url(img/positive.png)
         }
-     
+        .satu {
+            width: 300px;
+            height: 300px;
+            background-color: #f60;
+            opacity: .5;
+            /* =opacity 50% dan bisa nda tulis angka 0 */
+            position: relative;
+            /* sampai disini terlihat hanya 1 elemn transparan */
+
+        }
+        .dua {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /* harusnya kan nda opacity karena nda pakai opacity */
+            /* tapi ternya pas di refres di browser dia transparan 50 %, 
+            hal itu karena dia mewarisi dari element parennya  yakni div.satu*/
+            position: absolute;
+            /* agar geser keluar */
+            right: -50px;
+            bottom: -50px;
+            /* sampai disini terlihat hanya 1 elemn transparan */
+            /* agar transparan terhadap elementa yang lain beri opacity dalam opacity */
+            opacity: .25;
+
+        }
+        /*yang di bawah solid dan yang kecil transparan */
+        .tiga {
+            width: 300px;
+            height: 300px;
+            background-color: #f60;
+            opacity: 1;
+            /* atau tidak punya opacity */
+            position: relative;
+            margin-top: 50px;
+
+        }
+        .empat {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+            opacity: .25;
+
+        }
+        .lima {
+        width: 300px;
+        height: 300px;
+        background-color: #f60;
+        opacity: 0.5;
+        /* atau tidak punya opacity */
+        position: relative;
+        margin-top: 50px;
+
+        }
+        .enam {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+            opacity: 1;
+
+        }
     </style>
+    
 </head>
 <body>
-    <div></div>
+    <div class="satu">
+        <!-- supaya bisa di geser2 .satu di beri position relative
+        dan .dua di beri position absolute -->
+        <div class="dua"></div>
+    </div>
+    <!-- yang dibawah solid dan yang kecil tranparan -->
+    <div class="tiga">
+        <!-- latihan element trnsparan dan tidak transparan -->
+        <div class="empat"></div>
+    </div>
+    <div class="lima">
+        <!-- mau bikin yang diatas solid dan yang dibawah transparant -->
+        <!-- pelajaran ini di lanjutkan ke video selanjutnya -->
+        <div class="enam"></div>
+    </div>
 </body>
 </html>
