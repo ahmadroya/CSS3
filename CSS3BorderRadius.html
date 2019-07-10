@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lihat perbedaan 1. Border Radius latihan</title>
+    <!-- berfungsi membuat kotak berujung tumpul -->
+    <style>
+         .kotak {
+             width: 150px;
+             height: 150px;
+             margin: 20px;
+             /* float dapat menjadikan displaynya terlihat inline 
+             (alias pindah kesini atas sebelah kiri selama parentnya masih muat)*/
+             float: left;
+
+         }
+         .kotak1 {
+             border: 8px solid #ccc;
+             border-radius: 10px;
+
+         }
+         .kotak2 {
+             border: 10px solid red;
+             border-radius: 35% 0 35% 0;
+        
+         }
+         .kotak3 {
+             border: 10px solid green;
+             border-radius: 50%;
+        
+         }
+         .kotak4 {
+             height: 70px;
+             border: 10px solid blue;
+             /* perhatikan penggunaan px dan % */
+             border-radius: 100px 100px 0 0;
+           
+         }
+         .kotak5 {
+             height: 70px;
+             border: 10px solid blue;
+              /* perhatikan penggunaan px dan % */
+             border-radius: 0 0 100px 100px;
+             margin-top: 110px;
+         }
+         .kotak6 {
+            border: 10px solid orange;
+            border-radius: 17px 50% 50% 17px;
+
+         }
+    
+        </style>
+</head>
+<body>
+        <div class="kotak kotak1"></div>
+        <div class="kotak kotak2"></div>
+        <div class="kotak kotak3"></div>
+        <div class="kotak kotak4"></div>
+        <div class="kotak kotak5"></div>
+        <div class="kotak kotak6"></div>
+  
+</body>
+</html>
