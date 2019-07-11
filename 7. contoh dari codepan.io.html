@@ -18,26 +18,28 @@
 	div {
 		height: 210px;
 		margin-bottom: 100px;
+        /* line-height untuk bikin teksnya berad ditengah elementnya */
 		line-height: 200px;
 		text-align: center;
 	}
-/* EFEK GLOW */
+
 	.teks1 {
+        /* memberi warna pada tulisan */
 		color: white;
 		text-shadow: 0 0 20px yellow;
 	}
-/*EFEK 3D*/
 	.teks2 {
 		background: #666;
 		color: #222;
 		text-shadow: 0 1px 1px white;
 	}
-/* EFEK INSET/INSIDE */
+
 	.teks3 {
 		background: #def;
 		color: rgba(10,60,150, 0.8);
 	    text-shadow: 1px 4px 6px #def, 
-	    			 0px 0px 0px #000, 
+        /* kreasi sendiri menjadi 3D inset */
+	    			 -1px -1px 10px #000, 
 	    			 1px 4px 6px #def;
 	}
 
@@ -53,7 +55,7 @@
 					 0 0 100px #ff00de, 
 					 0 0 150px #ff00de;
 	}
-/* BAYANGAN BERTUMPUK */
+
 	.teks5 {
 		color: white;
 		margin-top: 100px;
@@ -82,16 +84,17 @@
 	               	 0 10px 10px rgba(0,0,0,.2),
 	               	 0 20px 20px rgba(0,0,0,.15);
 	}
-/* EFEK NEON GLOW */
+
 	.teks7 {
 		background-color: #3a50d9;
 	  	color: #e0eff2;
+        font-size: 85px;
 	  	font-style: italic;
 	  	font-weight: bold;
 	  	font-family: georgia;
 	  	text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
 	}
-/* EFEK API */
+
 	.teks8 {
 		background-color: #fff;	
 		  color: #202c2d;
@@ -140,21 +143,24 @@
 		text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
 	}
+    * {
+        border: 1px solid green;
+    }
     </style>
 </head>
 <body>
         <div class="teks1">Text Shadow 1</div>
         <div class="teks2">Text Shadow 2</div>
         <div class="teks3">Text Shadow 3</div>
-        <div class="teks10">Text Shadow 4</div>
-        <div class="teks11">Text Shadow 5</div>
-        <div class="teks12">Text Shadow 6</div>
-        <div class="teks4">Text Shadow 7</div>
-        <div class="teks5">Text Shadow 8</div>
-        <div class="teks6">Text Shadow 9</div>
-        <div class="teks7" style="font-size: 85px;">Text Shadow 10</div>
-        <div class="teks8">Text Shadow 11</div>
-        <div class="teks9">Text Shadow 12</div>
+        <div class="teks4">Text Shadow 4</div>
+        <div class="teks5">Text Shadow 5</div>
+        <div class="teks6">Text Shadow 6</div>
+        <div class="teks7">Text Shadow 7</div>
+        <div class="teks8">Text Shadow 8</div>
+        <div class="teks9">Text Shadow 9</div>
+        <div class="teks10">Text Shadow 10</div>
+        <div class="teks11">Text Shadow 11</div>
+        <div class="teks12">Text Shadow 12</div>
     
 </body>
 </html>
