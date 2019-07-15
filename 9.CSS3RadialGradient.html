@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radial Gradient</title>
+    <link rel="icon" href="img/css.png">
+    <style>
+        div {
+            width: 250px;
+            height: 150px;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 150px;
+        }
+        .judul  {
+            text-align: center;
+        }
+        .nama {
+            font-size: 18px;
+            text-align: center;
+        }
+        .radial {
+            background: radial-gradient(red,green);
+            
+        }
+        .color-stop {
+            background-image: radial-gradient(red 10%, green 20%, blue 80%);
+            
+        }
+    /* type */
+        .radial_type_ellipse{
+            background: radial-gradient(ellipse,red,blue);
+          
+
+        }
+        .radial_type_circle {
+            background: radial-gradient(circle,red,blue);
+         
+        }
+    /* jangkauan */
+        /* sudut */
+        .closest_corner {
+            background: radial-gradient(circle closest-corner ,red,blue);
+           
+            
+        }
+        .farthest_corner {
+            background: radial-gradient(circle farthest-corner ,red,blue);
+            
+
+        }
+        /* jarak */
+        .closest_side {
+            /* 1 */
+            background: radial-gradient(circle closest-side ,red,blue);
+           
+            
+        }
+        .farthest_side {
+            background: radial-gradient(circle farthest-side ,red,blue);
+            
+        }
+    /* pindahkan pusat(posisi) */
+        .posisi_farthest_side {
+            border: 1px solid red;
+            background: radial-gradient(circle farthest-side at top left,red,blue);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="judul">Radial & Color-Stop</h1>
+    <div class="radial"><h1 class="nama">radial</h1></div>
+    <div class="color-stop"><h1 class="nama">color-stop</h1></div>
+    <!-- type -->
+    <h1 class="judul">Type: ellipse & circle</h1>
+    <div class="radial_type_ellipse"><h1 class="nama">ellipse</h1></div>
+    <div class="radial_type_circle"><h1 class="nama">circle</h1></div>
+    <!-- jangkauan -->
+    <!-- sudut -->
+    <h1 class="judul">Jangkauan</h1>
+    <h2 class="judul">pusatnya masih di tengah</h2>
+    <div class="closest_corner"><h1 class="nama">closest-corner</h1></div>
+    <h3 class="judul">yang dua ini masih sama <br> karena sama jarak sudut ke titik pusat</h3>
+    <div class="farthest_corner"><h1 class="nama">farthest-corner</h1></div>
+    <!-- jarak -->
+    <div class="closest_side"><h1 class="nama">closest-side</h1></div>
+    <div class="farthest_side"><h1 class="nama">farthest-side</h1></div>
+    <!-- pindahkan pusat(posisi) -->
+    <!-- nda tau -->
+    <h1 class="judul"> Contoh <br> Pindahkan Pusat(Posisi)</h1>
+    <div class="posisi_farthest_side"><p>posisi 
+<!--         
+         at:
+         top left
+         top right
+         bottom left
+         bottom right -->
+        
+    </p><div>
+   
+
+  
+    
+</body>
+</html>
