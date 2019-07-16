@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+    <link rel="icon" href="img/css.png">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        img {
+            margin-top: 20px;
+            margin-left: 600px;
+            margin: auto;
+        }
+        /* Filter contekan
+         blur(px)
+         brightness(%)
+         contrast(%)
+         saturate(%)
+         grayscale(%)
+         sepia(%)
+         hue-ratate(deg)
+         invert(%)
+         opacity(%)
+         drop-shadow(Sama sseperti box-shadow)*/
+
+        /* img {
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+            -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+        } */
+        .blur {
+            /* memburamkan */
+            filter: blur(15px);
+        }
+        .brightness {
+            /* menambahkan pencahayaan, gelap dan terang*/
+            filter: brightness(200%); 
+            /* bisa pakai nilai koma misal 150%=1,5 */
+        }
+        .contrast {
+            filter: contrast(200%); 
+        }
+        .saturate {
+            /* mengatur kekentalan warna */
+            filter: saturate(20%);
+        }
+        .grayscale {
+            filter: grayscale(100%);
+
+        }
+        .sepia {
+            /* jadi kayak kuning */
+            filter: sepia(100%);
+        }
+        .hue-ratate {
+            /* merubah seluruh warna, gunakan bantuan photoshop
+            photoshop> image> adjustment> hue/saturate */
+            filter: hue-rotate(100deg);
+        }
+        .invert {
+            filter: invert(80%);
+        }
+        .opacitysatu {
+            /* sama saja dengan yg di bawah */
+            filter: opacity(50%);
+        }
+        .opacitydua {
+            opacity: .5;
+        }
+        .drop-shadow {
+            filter: drop-shadow(2px 2px 2px black);
+        }
+        h1 {
+            filter: drop-shadow(10px 15px 5px black);
+            margin-top: 100px;
+            font-size: 200px;
+        }
+        img {
+            filter: drop-shadow(20px 20px 5px black);
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <img class="blur" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="brightness" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="contrast" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="saturate" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="grayscale" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="sepia" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="hue-ratate" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="invert" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="opacitysatu" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="opacitydua" src="img/pemandangan.jpg" alt="oh...wouw">
+    <img class="drop-shadow" src="img/pemandangan.jpg" alt="oh...wouw">
+    <h1>Web Programing UNPAS</h1>
+    <img src="img/css.png" alt="css">
+</body>
+
+</html>

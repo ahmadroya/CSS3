@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/css.png">
+    <title>Transform</title>
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            /* artinya memperbesar 2x lipat, kalau angkanya .5 
+            berati mengubah kotaknya setengah dari aslinya */
+            transition: 1s;
+            
+        }
+        .kotak:hover {
+            transform: scale(2);
+        }
+
+        /* 
+        scale(angka), scaleX(angka), scaleY(angka)
+        rotate(deg), rotateX(deg), rotateY(deg)
+        skew(deg), skewX(deg), skewY(deg)
+        translate(px), translateX(px), translateY(px)
+        */
+        p,h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* contoh scale (x,y) sekaligus */
+        .kotakxy {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .kotakxy:hover {
+            transform: scale(2,1.5);
+            /* artinya ubah x=2x lipat dan y=1,5x lipat */
+        }
+        /* membuat scale x & Y berpisah */
+        .kotakxdany {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .kotakxdany:hover {
+            transform: scaleX(2) scaleY(1.5); 
+            /* artinya ubah x=2x lipat dan y=1,5x lipat */
+        }
+        /* membuat rotate */
+        .kotakrotate {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .kotakrotate:hover {
+            transform: rotate(45deg);
+            /* berpuatar 45 derajat searah jarum jam, 
+            unt. membuat berlawanan arah jarum jam cukup 
+            tambahkan minus*/
+        }
+        /* menjadikan rotate pada sumbu x saja*/
+        .kotakrotatex {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .kotakrotatex:hover {
+            transform: rotateX(90deg);
+        }
+        /* menjadikan rotate pada sumbu y saja*/
+        .kotakrotatey {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .kotakrotatey:hover {
+            transform: rotateY(90deg);
+        }
+         /* menjadikan rotate pada semua sumbu rotate*/
+         .merotasi3sumbu {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .merotasi3sumbu:hover {
+            transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+        }
+         /* memiringkan*/
+         .skew {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .skew:hover {
+            transform: skew(30deg);
+            /* skew=skewx */
+            /* miring 30 derajat di hitung dari kiri */
+        }
+         /* memiringkan berdasar sumbux (horisontal)*/
+         .skewx {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .skewx:hover {
+            transform: skewX(30deg);
+            /* skew=skewx */
+            /* miring 30 derajat di hitung dari kiri */
+        }
+         /* memiringkan berdasar sumbu-Y (vertikal)*/
+        .skewy {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .skewy:hover {
+            transform: skewY(30deg);
+            /* skew=skewx */
+            /* miring 30 derajat di hitung dari kiri */
+
+        /* memindahkan element */
+        }
+        .translate {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .translate:hover {
+            transform: translate(50px);
+            
+        }
+         /* memindahkan element */
+        
+        .translatexy {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .translatexy:hover {
+            transform: translate(50px, 100px);
+        }
+/* Transform semua */
+        .transformsemua {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+            
+        }
+        .transformsemua:hover {
+            transform: scale(3) rotate(360deg) ;
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="kotak"></div>
+<!-- scale -->
+    <h1>Scale</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor pariatur adipisci officia iusto placeat
+        cumque
+        ex quas officiis culpa, odit ipsa consequatur in non, enim eius totam rem ad.</p>
+    <div class="kotakxy"></div>
+    <h1>scalexy bersamaan</h1>
+    <div class="kotakxdany"></div>
+    <h1>scalexdany berpisah</h1>
+    <div class="kotakrotate"></div>
+<!-- rotate -->
+    <h1>kotakrotate</h1>
+    <div class="kotakrotatex"></div>
+    <h1>kotakrotatex</h1>
+    <div class="kotakrotatey"></div>
+    <h1>kotakrotatey</h1>
+    <div class="merotasi3sumbu"></div>
+    <h1>merotasi 3 sumbu</h1>
+<!-- skew -->
+    <div class="skew"></div>
+    <h1>skew</h1>
+    <div class="skewx"></div>
+    <h1>skew dan skewX</h1>
+    <div class="skewy"></div>
+    <h1>skewY</h1>
+<!-- translate -->
+    <div class="translate"></div>
+    <h1>translate</h1>
+    <div class="translatexy"></div>
+    <h1>translatexy</h1>
+    <!-- performance menggunakan translate jauh lebih baik 
+        dari pada menggunakan position top left -->
+<!-- menggunakan semua transform -->
+    <div class="transformsemua"></div>
+    <h1>transformsemua</h1>
+
+    
+<!--     
+    scale(angka), scaleX(angka), scaleY(angka)=mengubah ke- besar atau kecil
+    rotate(deg), rotateX(deg), rotateY(deg)=memutar
+    skew(deg), skewX(deg), skewY(deg)=memiringkan
+    translate(px), translateX(px), translateY(px)
+        =mengubah posisi sebuah element
+    translate(50px, 50px), artinya kekanan(x) 50px dan kebawah(y) 50px
+     -->
+    </body>
+
+</html>
