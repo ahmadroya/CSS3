@@ -6,8 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Transition(Part1)</title>
     <link rel="icon" href="img/css.png">
+    <style>
+       
+       body {
+           margin: 0;
+           padding: 0;
+       }
+       h1 {
+           color: violet;
+       }
+/* parameter #1 <Durasi> */
+    /* keadaan awal */
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 0;
+            padding: 0;
+            /* menyimpan transisi di keadaan awal */
+            transition: 1s;
+        }
+    /* keadaan akhir */
+        .kotak:hover {
+            transform: rotate(180deg);
+            /* jika tanpa transisi tidak nampak terjadi  perubahan*/
+        }
+/* parameter #2  <property> 
+        apa saja yang bis di gunakan unt. transisi */
+    /* keadaan awal */
+        .kotakdua {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 0;
+            padding: 0;
+            /* menyimpan transisi di keadaan awal */
+            transition: 3s;
+        }
+    /* keadaan akhir */
+        .container:hover .kotakdua {
+            /* lakukan hover pada container */
+            transform: rotate(180deg);
+            margin-left: 800px;
+            background:violet;
+        }
+        /* agar terlihat kita gunakan rutenya*/
+        .container {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid violet;
+        }
+        /* jika seperti ini 
+        akan patah2 maka kita masukan kotak dalam div */
+/* parameter #3  <mengubah property tertentu dengan 
+menambahkan nama property> 
+        apa saja yang bis di gunakan unt. transisi */
+    /* keadaan awal */
+    .kotaktiga {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 0;
+            padding: 0;
+            /* menyimpan transisi di keadaan awal */
+            transition: margin-left 3s;
+            /* hanya melakukan transisi 
+            pada parameter margin-left */
+        }
+    /* keadaan akhir */
+        .containerdua:hover .kotaktiga {
+            /* lakukan hover pada container */
+            transform: rotate(180deg);
+            margin-left: 800px;
+            background:violet;
+        }
+        /* agar terlihat kita gunakan rutenya*/
+        .containerdua {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid violet;
+        }
+        /* jika seperti ini 
+        akan patah2 maka kita masukan kotak dalam div */
+    </style>
 </head>
 <body>
+    <h1>#1 Durasi</h1>
+    <div class="kotak"></div>
+    <h1>#2 Property</h1>
+    <div class="container">
+            <div class="kotakdua"></div>
+    </div>
+    <h1>#3 transisi:hover property tertentu</h1>
+    <div class="containerdua">
+            <div class="kotaktiga"></div>
+    </div>
     
 </body>
 </html>
