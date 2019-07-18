@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition(Part1)</title>
+    <link rel="icon" href="img/css.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* parameter #2  <property> 
+        apa saja yang bis di gunakan unt. transisi */
+        /* keadaan awal */
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+
+            /* menyimpan transisi di keadaan awal */
+
+        }
+
+        /* keadaan akhir */
+        .container:hover .kotak {
+            /* lakukan hover pada container */
+            transform: rotate(180deg);
+            margin-left: 800px;
+            background-color: violet;
+        }
+
+        .container2:hover .kotak {
+            /* lakukan hover pada container */
+            transform: rotate(360deg) scale(2);
+            margin-left: 800px;
+            background-color: violet;
+        }
+
+        /* agar terlihat kita gunakan rutenya*/
+        .container,
+        .container2 {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid violet;
+        }
+
+        /* jika seperti ini 
+        akan patah2 maka kita masukan kotak dalam div */
+        .kotak1 {
+            transition: all 3s ease;
+        }
+
+        .kotak2 {
+            transition: all 3s ease-in;
+        }
+
+        .kotak3 {
+            transition: all 3s ease-out;
+        }
+
+        .kotak4 {
+            transition: all 3s ease-in-out;
+        }
+
+        .kotak5 {
+            transition: all 3s linear;
+        }
+
+        .kotak6 {
+            transition: all 3s cubic-bezier(0, 0, 0.14, 0.82);
+        }
+
+        .kotak7 {
+            transition: margin-left 3s, transform 3s 2s, background-color 500ms 3s;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+        }
+
+        /* cara bacanya (menggunakan multiple transisi), 
+        property margin-left transisi 3 detik tunda 2 detik
+            (berpindah ke kiri dengan durasi 3 detik tunda 2 detik),lalu
+        transform durasi 3 detik delay 2 detik
+            (berputar selama 3 detik, 
+            tentunya setelah kursos tetap<delay/tunda> selama 2 detik
+        dan jadikan background-colornya menjadi warna ... 
+            selama 500ms setelah delay 3 detik*/
+    </style>
+</head>
+
+<body>
+    <h1>#Belajar Function dan Delay</h1>
+    <div class="container">
+        <div class="kotak kotak1">ease</div>
+        <div class="kotak kotak2">ease-in</div>
+        <div class="kotak kotak3">ease-out</div>
+        <div class="kotak kotak4">ease-in-out</div>
+        <div class="kotak kotak5">linear</div>
+        <div class="kotak kotak6">cubic-bezier</div>
+
+    </div>
+    <div class="container2">
+        <div class="kotak kotak7">delay</div>
+    </div>
+
+
+
+</body>
+
+</html>
