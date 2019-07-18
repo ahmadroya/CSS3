@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <link rel="icon" href="img/css.png">
+</head>
+<style>
+    /* ##--animasi di letakkan pada hover */
+    div {
+        margin: 50px;
+        text-align: center;
+        line-height: 200px;
+    }
+
+    .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+
+    }
+
+    .kotak:hover {
+        animation: animasikotak 2s ease;
+    }
+
+    @keyframes animasikotak {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* ##--kotak kedua animation pada bukaan pertama,tanpa hover */
+    .kotakdua {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        animation: animasikotakdua 2s ease;
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotakdua {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+ /* ##--kotak ketiga animation dgan pengulang angka */
+ .kotaktiga {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        animation: animasikotaktiga 2s ease 2;
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotaktiga {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* ##--kotak ketiga animation dengan pengulangan infinite */
+.kotakempat {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotakempat:hover {
+        animation: animasikotakempat 2s ease infinite;
+        
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotakempat {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* penggunaan direction gunakan hover*/
+/* ##--kotak lima animation dengan direction reverse */
+.kotaklima {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+       
+        /* animasi dilakukan dari akhir animasi */
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotaklima:hover {
+        animation: animasikotaklima 2s ease 2 reverse ;
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotaklima {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* penggunaan direction gunakan hover*/
+/* ##--kotak lima animation dengan direction reverse */
+.kotakenam {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+       
+        /* animasi dilakukan dari akhir animasi */
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotakenam:hover {
+        animation: animasikotakenam 2s ease 2 alternate ;
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotakenam {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* penggunaan direction gunakan hover*/
+/* ##--kotak lima animation dengan direction reverse */
+.kotaktujuh {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+       
+        /* animasi dilakukan dari akhir animasi */
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotaktujuh:hover {
+        animation: animasikotaktujuh 2s ease 2 alternate-reverse ;
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotaktujuh {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* penggunaan fill mode gunakan hover*/
+.kotakdelapan {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+       
+        /* animasi dilakukan dari akhir animasi */
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotakdelapan:hover {
+        animation: animasikotakdelapan 2s ease 2 alternate-reverse forwards ;
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotakdelapan {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+/* penggunaan play-state gunakan hover*/
+.kotaksembilan {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+       
+        /* animasi dilakukan dari akhir animasi */
+        /* penamabahan angka(unt. berapa kali pengulangan)
+         atau infinite(unt. pengulangan terus menerus) */
+        /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+
+    }
+    .kotaksembilan:hover {
+        animation: animasikotaksembilan 2s ease 2 alternate-reverse forwards;
+    }
+
+    /* animasi di letakkan pada hover */
+    /* hover disini sudah di hilangkan */
+    @keyframes animasikotaksembilan {
+        0% {
+            width: 200px;
+        }
+
+        50% {
+            width: 500px;
+            height: 200px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    /* nilai yang dapat di berikan pada property animation
+    [name] [duration] [timming-function]
+    [delay] [interation-count] [direction]
+    [fill-mode] [play-state]  
+*/
+</style>
+
+<body>
+    <h1>name, duration & timing function </h1>
+    <div class="kotak">bergerak ketika diarahkan</div>
+    <div class="kotakdua">bergerak di awal penampilan</div>
+    <h1>Interation-count</h1>
+    <div class="kotaktiga">1.ulang dgn interation-count</div>
+    <div class="kotakempat">2.ulang dgn interation-count</div>
+    <h1>direction</h1>
+    <div class="kotaklima">1.reverse:mulai dri akhir</div>
+    <div class="kotakenam">2.alternate:awal-akhir-awal</div>
+    <div class="kotaktujuh">alternate-reverse:akhir-awalx2</div>
+    <h1>fill mode</h1>
+    <div class="kotakdelapan">1.forwards: tdak loncat keawal</div>
+    <h1>play-state/digunakan pada js</h1>
+    <div class="kotaksembilan">running/pause pakai inspect</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
